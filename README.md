@@ -1,12 +1,8 @@
-# Prime Mind — Website
+# Prime Mind — Website (v3)
 
-Static pre‑launch site for https://primemind.cloud
+Adds:
+- Improved header/nav (spacing, hover underline, larger logo)
+- Configurable background (animated gradient or soft shapes via body class)
+- Integrated Investors section (Johan Strid contact + FAQ + one‑pager link placeholder)
 
-## Deploy on GitHub Pages
-1. Create a public repo and add files in repo root.
-2. Add `CNAME` with `primemind.cloud`.
-3. Settings → Pages → Deploy from a branch → `main` / root.
-
-## Notes
-- Sections mirror the pitch deck (Problem, Lösning, Edge, MVP, Vertikaler, Affärsmodell, Roadmap/Kapital, Team).
-- Replace the investor PDF link in `#investors` when available.
+To switch background mode: in `index.html` change `<body class="bg-gradient">` to `bg-shapes`.
