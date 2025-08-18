@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "primemind.se",
+  "Id": "fc8058c0-b37e-4748-99f7-b333adac6afa"
+}
