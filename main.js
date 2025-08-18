@@ -1,17 +1,16 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".main-nav a");
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(link => link.classList.remove("active"));
-        const activeLink = document.querySelector(`.main-nav a[href="#${entry.target.id}"]`);
-        if (activeLink) activeLink.classList.add("active");
-      }
+  const form = document.getElementById('wl-form');
+  if (form) {
+    const msg = document.getElementById('form-msg');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = form.querySelector('input[type="email"]').value.trim();
+      if(!email){ msg.textContent='Fyll i din e‑post.'; return; }
+      msg.textContent = 'Tack! Vi hör av oss.';
+      form.reset();
     });
-  }, {threshold: 0.5});
-
-  sections.forEach(section => observer.observe(section));
+  }
 });

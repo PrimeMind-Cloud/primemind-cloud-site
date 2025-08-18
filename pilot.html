@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pilotprogram — PrimeMind</title>
+  <meta name="description" content="Pilotprogram för CCO/Helena — nischbanker, spelbolag och defense tech‑leverantörer. Få en styrbar Compliance Cockpit på 4 veckor.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="PrimeMind">
+      <span>PrimeMind</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#varfor">Varför</a>
+      <a href="#upplagg">Upplägg</a>
+      <a href="#bransch">Branscher</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#start">Starta pilot</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="badge">Riktad till CCO/Helena</span>
+      <h1>Visa compliance på riktigt — inte bara i policy</h1>
+      <p class="lead">PrimeMind ger spårbarhet från regelkrav till åtgärder, system och ansvar — och en cockpit du kan stå för i styrelserummet.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#start">Starta pilot</a>
+        <a class="btn btn-ghost" href="#exempel">Se exempel</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="upplagg" class="section">
+    <div class="container">
+      <div class="band">På 30 dagar får du</div>
+      <div class="grid-4">
+        <div class="card"><h3>1) Lens</h3><p>Scope + risklinser.</p></div>
+        <div class="card"><h3>2) Mappning</h3><p>Regel → process/system/roller/data.</p></div>
+        <div class="card"><h3>3) Cockpit</h3><p>Gap, åtgärder, ansvar, realiseringsgrad.</p></div>
+        <div class="card"><h3>4) Styrelseunderlag</h3><p>Beslutsbar plan + evidens.</p></div>
+      </div>
+      <p class="note">Krav: 1–2 domänexperter, relevanta dokument och dataskyddsavtal.</p>
+    </div>
+  </section>
+
+  <section id="bransch" class="section">
+    <div class="container">
+      <div class="band">Branschblock</div>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Nischbank / Försäkring</h3>
+          <p><strong>Utmaningar:</strong> DORA, GDPR, Basel III, AML/KYC; rapportkrav, spårbarhet.</p>
+          <p><strong>Du får:</strong> dashboard, spårbarhetsmodell, prioriterad åtgärdslista.</p>
+          <p><strong>Resultat:</strong> tydliga svar till styrelse/tillsyn, snabbare revision.</p>
+        </div>
+        <div class="card">
+          <h3>Spelbolag (multi‑licens)</h3>
+          <p><strong>Utmaningar:</strong> licenser per land, ansvar, AML, ansvarsfullt spelande.</p>
+          <p><strong>Du får:</strong> samlad kravvy, varningar vid ändring, mappning till processer.</p>
+          <p><strong>Resultat:</strong> färre överraskningar, minskad sanktionsrisk, enhetlig styrning.</p>
+        </div>
+        <div class="card">
+          <h3>Defense tech‑leverantörer</h3>
+          <p><strong>Utmaningar:</strong> ITAR/EAR, EU Dual‑Use, säkerhetsskydd, exportkontroll.</p>
+          <p><strong>Du får:</strong> AI‑driven insamling/tolkning, projekt‑/produktmappning.</p>
+          <p><strong>Resultat:</strong> snabbare revision, säkrare leveranser, central kontroll.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="exempel" class="section">
+    <div class="container">
+      <div class="band">Exempel / demo</div>
+      <p>Vi visar gärna hur cockpit och spårbarhet ser ut med era dokument (syntetiska exempel kan delas vid behov).</p>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="band">FAQ</div>
+      <div class="grid-2">
+        <div class="card"><h3>Behövs stora interna team?</h3><p>Nej, börja litet – 1–2 domänexperter räcker för piloten.</p></div>
+        <div class="card"><h3>Flera regelverk?</h3><p>Samma modell; nya regeltexter mappas in och cockpit uppdateras.</p></div>
+        <div class="card"><h3>Egna verktyg?</h3><p>Ja, export/API planeras. Vi anpassar format för integration.</p></div>
+        <div class="card"><h3>Datasäkerhet?</h3><p>Dataskyddsavtal och begränsat åtkomstupplägg ingår i piloten.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="start" class="section">
+    <div class="container">
+      <div class="band">Starta pilot</div>
+      <p class="lead">Skicka din e‑post så tar vi kontakt för avgränsning och tidsplan.</p>
+      <form id="wl-form" class="form" aria-label="Pilotförfrågan">
+        <label class="visually-hidden" for="email">E‑post</label>
+        <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="din@adress.se" required>
+        <button type="submit" class="btn btn-primary">Skicka</button>
+        <p id="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container cols">
+    <div><strong>PrimeMind</strong><br><span class="small">© <span id="year"></span> PrimeMind</span></div>
+    <div class="small">Kontakt: <a href="mailto:hello@primemind.cloud">hello@primemind.cloud</a></div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
