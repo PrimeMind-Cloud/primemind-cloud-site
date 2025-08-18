@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<browserconfig>
+  <msapplication>
+    <tile image="assets/icons/ms-icon-150x150.png" />
+    <tile color="#ffffff" />
+  </msapplication>
+</browserconfig>
