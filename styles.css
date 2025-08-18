@@ -81,3 +81,62 @@ a:hover{text-decoration:underline}
   display:inline-flex;align-items:center;gap:10px;padding:6px 10px;border:1px dashed var(--border);
   border-radius:999px;background:#fff;box-shadow:var(--shadow);font-weight:700
 }
+
+.pm-block.pm-index {
+  position: relative;
+  padding: 72px 0 32px;
+  background: linear-gradient(180deg, #f5f9ff, transparent);
+}
+
+.pm-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pm-copy {
+  max-width: 750px;
+  padding: 0 20px;
+}
+
+.pm-index h2 {
+  font-size: clamp(28px, 4vw, 48px);
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.pm-index p {
+  color: var(--muted);
+  font-size: clamp(18px, 2.2vw, 20px);
+  line-height: 1.6;
+}
+
+.pm-visual-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pm-icon-background {
+  width: 200px;
+  height: auto;
+  opacity: 0.1;
+}
+
+@media (max-width: 720px) {
+  .pm-index h2 {
+    font-size: clamp(22px, 3.5vw, 28px);
+  }
+
+  .pm-index p {
+    font-size: clamp(16px, 2.5vw, 18px);
+  }
+}
