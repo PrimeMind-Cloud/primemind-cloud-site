@@ -82,64 +82,30 @@ a:hover{text-decoration:underline}
   border-radius:999px;background:#fff;box-shadow:var(--shadow);font-weight:700
 }
 
-.pm-flex-table {
-  display: table;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.pm-flex-text {
-  display: table-cell;
-  vertical-align: middle;
-  padding: 0 20px;
-  text-align: left;
-}
-
-.pm-flex-icon {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: right;
-}
-
-.pm-index h2 {
-  font-size: clamp(28px, 4vw, 48px);
-  color: var(--text);
-  margin-bottom: 16px;
-}
-
-.pm-index p {
-  color: var(--muted);
-  font-size: clamp(18px, 2.2vw, 20px);
-  line-height: 1.6;
-  text-align: left;
-}
-
-.pm-icon-background {
-  width: 150px;
-  height: auto;
-  opacity: 0.1;
-}
-
-@media (max-width: 720px) {
-  .pm-flex-table {
-    display: block;
-  }
-  .pm-flex-text, .pm-flex-icon {
-    display: block;
-    text-align: center;
-  }
-}
-
-/* === Value split block (text + bild sida vid sida) === */
+/* === Value split block (index) === */
 .value-split { padding: 56px 0; background: linear-gradient(180deg,#f5f9ff,transparent); }
-.value-split .wrap { display:grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items:center; }
-.value-illu { display:flex; align-items:center; justify-content:center; }
-.value-illu svg, .value-illu img { width: clamp(320px, 42vw, 520px); height:auto; }
-.value-copy { max-width: 52ch; }
-.value-copy h2 { font-size: clamp(28px,4vw,48px); line-height:1.15; margin: 0 0 12px; }
-.value-copy p { font-size: clamp(16px,2vw,18px); color: var(--muted); margin:0; }
-/* mobil: stapla, men behåll “lika stor” känsla */
+.value-split .wrap {
+  display: grid;
+  grid-template-columns: 45% 55%;  /* text : bild */
+  gap: 32px;
+  align-items: center;
+}
+.value-copy { max-width: 60ch; }
+.value-copy h2 { font-size: clamp(32px,4.8vw,52px); line-height: 1.15; margin: 0 0 12px; }
+.value-copy p  { font-size: clamp(16px,2vw,18px); color: var(--muted); margin: 0; }
+
+.value-illu { display:flex; align-items:center; justify-content:flex-end; }
+.value-illu svg, .value-illu img {
+  width: clamp(380px, 50vw, 640px); /* större bild */
+  height: auto;
+}
+
+/* Mobil: stapla men behåll tydlig storlek på ikonen */
 @media (max-width: 900px){
-  .value-split .wrap { grid-template-columns: 1fr; text-align:center; }
+  .value-split .wrap { grid-template-columns: 1fr; text-align: center; }
+  .value-illu { justify-content: center; }
   .value-copy { margin: 0 auto; }
 }
+
+/* Om den gamla bakgrundsikonen finns kvar – göm den */
+.pm-visual-background { display: none !important; }
