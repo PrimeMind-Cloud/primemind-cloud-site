@@ -62,45 +62,38 @@
   </section>
  
   <!-- index-value.html -->
-
-  <section class="pm-block pm-index" aria-labelledby="pm-index-title" style="background:linear-gradient(180deg, #f5f9ff, transparent); padding: 72px 0 32px; position: relative;">
-    <!-- Bakgrundsikoner som lager -->
-    <div class="pm-visual-background">
-      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="" class="pm-icon-background">
-        <path d="M6 40c6 0 6-4 12-4s6 4 12 4 6-4 12-4 6 4 12 4" stroke="#3b82f6" stroke-width="2.2" stroke-linecap="round"/>
-        <path d="M10 20h44M10 24h36M10 28h28" stroke="#1f3b68" stroke-width="2" stroke-linecap="round" opacity=".65"/>
-        <path d="M6 44c6 0 6-4 12-4s6 4 12 4 6-4 12-4 6 4 12 4" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" opacity=".8"/>
-      </svg>
-    </div>
-    
-    <div class="pm-flex" style="justify-content: center; text-align: center;">
-      <div class="pm-container">
-        <!-- Table structure with 2 columns for better balance -->
-        <div class="pm-flex-table" style="display: table; width: 100%; max-width: 1120px; margin: 0 auto;">
-          <!-- Text Column -->
-          <div class="pm-flex-text" style="display: table-cell; vertical-align: middle; padding: 0 20px;">
-            <h2 id="pm-index-title" style="font-size: clamp(28px,4vw,48px); color: var(--text); margin-bottom: 16px; text-align: left;">
-              Från att laga läckor till att bygga styrka
-            </h2>
-            <p style="color: var(--muted); font-size: clamp(18px, 2.2vw, 20px); line-height: 1.6; text-align: left;">
-              AI har länge använts för att täppa till små risker. Prime Mind gör något annat:
-              vi förstärker hela skrovet och rustar organisationen för de verkliga stormarna –
-              nya regelverk och styrelsens ansvar.
-            </p>
-          </div>
-          <!-- Icon Column -->
-          <div class="pm-flex-icon" style="display: table-cell; vertical-align: middle; text-align: right;">
-            <!-- Skala ner ikonen här för att skapa balans -->
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="" style="width: 150px; height: auto; opacity: 0.1;">
-              <path d="M6 40c6 0 6-4 12-4s6 4 12 4 6-4 12-4 6 4 12 4" stroke="#3b82f6" stroke-width="2.2" stroke-linecap="round"/>
-              <path d="M10 20h44M10 24h36M10 28h28" stroke="#1f3b68" stroke-width="2" stroke-linecap="round" opacity=".65"/>
-              <path d="M6 44c6 0 6-4 12-4s6 4 12 4 6-4 12-4 6 4 12 4" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" opacity=".8"/>
-            </svg>
-          </div>
-        </div>
+  <section class="value-split">
+    <div class="container wrap">
+      
+      <!-- Bild/ikon vänster -->
+      <div class="value-illu" aria-hidden="true">
+        <!-- Inline SVG (tydliga linjer, ingen opacity) -->
+        <svg viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg">
+          <!-- tre “textlinjer” som grafik -->
+          <rect x="60" y="100" rx="22" ry="22" width="520" height="44" fill="#6b7b90"/>
+          <rect x="60" y="168" rx="22" ry="22" width="420" height="44" fill="#6b7b90"/>
+          <rect x="60" y="236" rx="22" ry="22" width="320" height="44" fill="#6b7b90"/>
+          <!-- vågor -->
+          <path d="M40 330c60 0 60-36 120-36s60 36 120 36 60-36 120-36 60 36 120 36"
+                fill="none" stroke="var(--brand)" stroke-width="22" stroke-linecap="round"/>
+          <path d="M40 372c60 0 60-36 120-36s60 36 120 36 60-36 120-36 60 36 120 36"
+                fill="none" stroke="#7fb3ff" stroke-width="22" stroke-linecap="round"/>
+        </svg>
       </div>
+  
+      <!-- Text höger -->
+      <div class="value-copy">
+        <h2>Från att laga läckor till att bygga styrka</h2>
+        <p>
+          AI har länge använts för att täppa till små risker. Prime Mind gör något annat:
+          vi förstärker hela skrovet och rustar organisationen för de verkliga stormarna –
+          nya regelverk och styrelsens ansvar.
+        </p>
+      </div>
+  
     </div>
   </section>
+
 
   <section id="problem" class="section">
     <div class="container">
