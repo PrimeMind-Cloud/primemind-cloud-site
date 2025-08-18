@@ -60,7 +60,9 @@
       </ul>
     </div>
   </section>
+ 
   <!-- index-value.html -->
+
   <section class="pm-block pm-index" aria-labelledby="pm-index-title" style="background:linear-gradient(180deg, #f5f9ff, transparent); padding: 72px 0 32px; position: relative;">
     <!-- Bakgrundsikoner som lager -->
     <div class="pm-visual-background">
@@ -72,17 +74,33 @@
     </div>
     
     <div class="pm-flex" style="justify-content: center; text-align: center;">
-      <div class="pm-copy" style="max-width: 750px;">
-        <h2 id="pm-index-title" style="font-size: clamp(28px,4vw,48px); color: var(--text); margin-bottom: 16px;">Från att laga läckor till att bygga styrka</h2>
-        <p style="color: var(--muted); font-size: clamp(18px, 2.2vw, 20px); line-height: 1.6;">
-          AI har länge använts för att täppa till små risker. Prime Mind gör något annat:
-          vi förstärker hela skrovet och rustar organisationen för de verkliga stormarna –
-          nya regelverk och styrelsens ansvar.
-        </p>
+      <div class="pm-container">
+        <!-- Table structure with 2 columns for better balance -->
+        <div class="pm-flex-table" style="display: table; width: 100%; max-width: 1120px; margin: 0 auto;">
+          <!-- Text Column -->
+          <div class="pm-flex-text" style="display: table-cell; vertical-align: middle; padding: 0 20px;">
+            <h2 id="pm-index-title" style="font-size: clamp(28px,4vw,48px); color: var(--text); margin-bottom: 16px; text-align: left;">
+              Från att laga läckor till att bygga styrka
+            </h2>
+            <p style="color: var(--muted); font-size: clamp(18px, 2.2vw, 20px); line-height: 1.6; text-align: left;">
+              AI har länge använts för att täppa till små risker. Prime Mind gör något annat:
+              vi förstärker hela skrovet och rustar organisationen för de verkliga stormarna –
+              nya regelverk och styrelsens ansvar.
+            </p>
+          </div>
+          <!-- Icon Column -->
+          <div class="pm-flex-icon" style="display: table-cell; vertical-align: middle; text-align: right;">
+            <!-- Skala ner ikonen här för att skapa balans -->
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="" style="width: 150px; height: auto; opacity: 0.1;">
+              <path d="M6 40c6 0 6-4 12-4s6 4 12 4 6-4 12-4 6 4 12 4" stroke="#3b82f6" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M10 20h44M10 24h36M10 28h28" stroke="#1f3b68" stroke-width="2" stroke-linecap="round" opacity=".65"/>
+              <path d="M6 44c6 0 6-4 12-4s6 4 12 4 6-4 12-4 6 4 12 4" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
 
   <section id="problem" class="section">
     <div class="container">
