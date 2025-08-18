@@ -109,3 +109,25 @@ a:hover{text-decoration:underline}
 
 /* Om den gamla bakgrundsikonen finns kvar – göm den */
 .pm-visual-background { display: none !important; }
+
+/* Dark variant for investors */
+.value-split--dark{
+  background:#0a1f3b; /* djup blå */
+  padding:56px 0;
+}
+.value-split--dark .wrap{
+  display:grid;
+  grid-template-columns: 45% 55%;
+  gap:32px;
+  align-items:center;
+}
+.value-split--dark .value-copy h2{ color:#eef4ff; }
+.value-split--dark .value-copy p{ color:#c7d6ef; } /* ljusare muted på mörk bg */
+.value-split--dark .btn.btn-primary{
+  background:#60a5fa; border-color:#60a5fa; color:#0a1f3b;
+}
+@media (max-width:900px){
+  .value-split--dark .wrap{ grid-template-columns:1fr; text-align:center; }
+  .value-split--dark .value-illu{ justify-content:center; }
+}
+
