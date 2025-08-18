@@ -61,27 +61,11 @@
     </div>
   </section>
  
-  <!-- index-value.html -->
+  <!-- INDEX: value block (text vänster, ikon höger) -->
   <section class="value-split">
     <div class="container wrap">
-      
-      <!-- Bild/ikon vänster -->
-      <div class="value-illu" aria-hidden="true">
-        <!-- Inline SVG (tydliga linjer, ingen opacity) -->
-        <svg viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg">
-          <!-- tre “textlinjer” som grafik -->
-          <rect x="60" y="100" rx="22" ry="22" width="520" height="44" fill="#6b7b90"/>
-          <rect x="60" y="168" rx="22" ry="22" width="420" height="44" fill="#6b7b90"/>
-          <rect x="60" y="236" rx="22" ry="22" width="320" height="44" fill="#6b7b90"/>
-          <!-- vågor -->
-          <path d="M40 330c60 0 60-36 120-36s60 36 120 36 60-36 120-36 60 36 120 36"
-                fill="none" stroke="var(--brand)" stroke-width="22" stroke-linecap="round"/>
-          <path d="M40 372c60 0 60-36 120-36s60 36 120 36 60-36 120-36 60 36 120 36"
-                fill="none" stroke="#7fb3ff" stroke-width="22" stroke-linecap="round"/>
-        </svg>
-      </div>
   
-      <!-- Text höger -->
+      <!-- TEXT (vänster) -->
       <div class="value-copy">
         <h2>Från att laga läckor till att bygga styrka</h2>
         <p>
@@ -91,8 +75,24 @@
         </p>
       </div>
   
+      <!-- IKON (höger) – stark, utan opacity -->
+      <div class="value-illu" aria-hidden="true">
+        <svg viewBox="0 0 640 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="">
+          <!-- tre “textlinjer” -->
+          <rect x="60" y="90"  rx="22" ry="22" width="520" height="44" fill="#6b7b90"/>
+          <rect x="60" y="158" rx="22" ry="22" width="420" height="44" fill="#6b7b90"/>
+          <rect x="60" y="226" rx="22" ry="22" width="320" height="44" fill="#6b7b90"/>
+          <!-- vågor (brandfärger, inga transparenser) -->
+          <path d="M40 318c60 0 60-36 120-36s60 36 120 36 60-36 120-36 60 36 120 36"
+                fill="none" stroke="var(--brand)" stroke-width="22" stroke-linecap="round"/>
+          <path d="M40 362c60 0 60-36 120-36s60 36 120 36 60-36 120-36 60 36 120 36"
+                fill="none" stroke="#60a5fa" stroke-width="22" stroke-linecap="round"/>
+        </svg>
+      </div>
+  
     </div>
   </section>
+
 
 
   <section id="problem" class="section">
