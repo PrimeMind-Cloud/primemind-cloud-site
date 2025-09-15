@@ -3,26 +3,20 @@
 <head>
   <script defer data-domain="primemind.cloud" src="https://plausible.io/js/script.file-downloads.outbound-links.tagged-events.js"></script>
   <script>
-    window.plausible = window.plausible || function() {
-      (window.plausible.q = window.plausible.q || []).push(arguments)
-    }
+    window.plausible = window.plausible || function(){(window.plausible.q = window.plausible.q || []).push(arguments)}
   </script>
-  <!-- Other head elements like meta tags, title, etc. -->
-  <!-- Favicon för webbläsare -->
+
+  <!-- Icons & PWA -->
   <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/icons/favicon-16x16.png" sizes="16x16">
   <link rel="icon" href="assets/icons/favicon-32x32.png" sizes="32x32">
-  
-  <!-- Apple- och iOS-enheter -->
   <link rel="apple-touch-icon" href="assets/icons/apple-icon-180x180.png">
-  
-  <!-- För manifest och PWA -->
   <link rel="manifest" href="assets/icons/manifest.json">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>För investerare — PrimeMind</title>
-  <meta name="description" content="PrimeMind — AI‑driven plattform som går från regeltext till styrbar struktur. Problem, lösning, varför nu, moat, MVP, GTM och kapital.">
+  <meta name="description" content="PrimeMind — AI-driven plattform som går från regeltext till styrbar struktur. Marknad, lösning, team och investeringsmöjlighet.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,114 +27,149 @@
       <span>PrimeMind</span>
     </a>
     <nav class="nav-links">
+      <a href="#marknad">Marknad</a>
       <a href="#problem">Problem</a>
       <a href="#losning">Lösning</a>
       <a href="#moat">Differentiering</a>
       <a href="#mvp">MVP</a>
       <a href="#gtm">Affärsmodell & GTM</a>
       <a href="#kapital">Kapital</a>
-      <a class="btn" href="assets/prime-mind-onepager.pdf">Ladda ner one‑pager</a>
+      <a class="btn" href="mailto:investor@primemind.cloud">Beställ one-pager</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <section class="hero">
-    <div class="container">
-      <span class="badge">Investeraröversikt</span>
-      <h1>Från komplex text till styrbar struktur — för ledningsnivå</h1>
-      <p class="lead">PrimeMind är en RegTech‑plattform som läser och strukturerar regelverk och kopplar dem till processer, system, roller och data. Slutleveransen är en <strong>Compliance Cockpit</strong> som driver beslut, prioritering och uppföljning.</p>
+  <!-- HERO: Compliance Wave + Radar -->
+  <section class="value-split--dark" id="hero">
+    <div class="container wrap">
+      <div class="value-copy">
+        <h2>Compliance-stormen är här</h2>
+        <p>PrimeMind gör den hanterbar – och marknaden är enorm.</p>
+        <p>På bara tre år kommer DORA, NIS2, AI Act och CSRD att påverka över 150&nbsp;000 europeiska företag. Alla behöver samma sak: spårbarhet från regelkrav till system och ansvar. PrimeMind är byggt för att bli den ledande motorn för compliance-spårbarhet – globalt.</p>
+        <a class="btn btn-primary" href="mailto:investor@primemind.cloud">Boka möte</a>
+      </div>
+      <div class="value-illu">
+        <img src="assets/compliance-wave-radar.jpg" alt="Compliance Wave & Radar" loading="eager">
+      </div>
     </div>
   </section>
-  <!-- INVESTORS: text vänster, ikon höger (mörk sektion) -->
-  <section class="value-split--dark">
-    <div class="container wrap">
-  
-      <!-- TEXT (vänster) -->
-      <div class="value-copy">
-        <h2>AI mot hål i skrovet – eller AI som bygger framtidens skepp?</h2>
-        <p>
-          Traditionella AI-initiativ hanterar små läckor. Prime Mind adresserar den strategiska risken:
-          att en tillståndsreglerad verksamhet förlorar rätten att verka. Vi bygger styrkan i hela
-          organisationen – så att försäkringsbolag, banker, spelbolag och defence tech kan navigera
-          genom nästa våg av krav utan att riskera tillståndet.
-        </p>
-        <div style="margin-top:16px">
-          <a class="btn btn-primary" href="mailto:hello@primemind.cloud">Prata med oss</a>
+
+  <!-- Tre block: varför investera -->
+  <section class="section">
+    <div class="container">
+      <h2>Varför investera i PrimeMind?</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Marknadsmöjlighet</h3>
+          <p>Compliance-marknaden växer snabbt globalt. Ingen aktör äger i dag nischen för <em>spårbarhet mellan regler, roller, system och data</em> – den vita fläcken som PrimeMind adresserar.</p>
+        </div>
+        <div class="card">
+          <h3>Varför nu?</h3>
+          <p>Tre samtidiga EU-regelverk (DORA, NIS2, AI Act) skapar <strong>akut beviskrav</strong> för ledningar och revisorer. PrimeMind har metodik och prototyper redo för pilotprojekt.</p>
+          <img src="assets/regulatory-radar.jpg" alt="Regulatory Radar" style="margin-top:12px;border-radius:12px;max-width:100%;" loading="lazy">
+        </div>
+        <div class="card">
+          <h3>Vår positionering</h3>
+          <p>Vi kombinerar AI med etablerad EA-standard (<strong>Prime Arch</strong>) för att gå från regeltext till cockpit. Fokus på styrbarhet, inte bara dokument.</p>
         </div>
       </div>
-  
-      <!-- IKON (höger) -->
-      <div class="value-illu" aria-hidden="true">
-        <!-- Skepp + vågor: rejäl viewBox så inget klipps, färger för mörk bg -->
-        <svg viewBox="0 0 700 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="">
-          <!-- skrov -->
-          <path d="M120 260h460l-44 92H164l-44-92z"
-                fill="none" stroke="#cfe3ff" stroke-width="12" />
-          <!-- överbyggnad -->
-          <path d="M220 260l88-168h84l88 168"
-                fill="none" stroke="#cfe3ff" stroke-width="12" />
-          <!-- våg 1 -->
-          <path d="M70 390c65 0 65-38 130-38s65 38 130 38 65-38 130-38 65 38 130 38"
-                fill="none" stroke="#7fb3ff" stroke-width="20" stroke-linecap="round"/>
-          <!-- våg 2 -->
-          <path d="M70 432c65 0 65-38 130-38s65 38 130 38 65-38 130-38 65 38 130 38"
-                fill="none" stroke="#38bdf8" stroke-width="20" stroke-linecap="round"/>
-        </svg>
-      </div>
-  
     </div>
   </section>
 
+  <!-- MARKNAD: siffror + förklaring av TAM/SAM/SOM -->
+  <section id="marknad" class="section">
+    <div class="container">
+      <div class="band">Marknad</div>
+      <h2>En marknad i snabb tillväxt</h2>
+      <p class="muted">Kombinerat GRC + RegTech växer kraftigt. PrimeMind positionerar sig i “white space” för spårbarhet över flera regelverk.</p>
 
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <h3>TAM</h3>
+          <p><strong>≈ 200&nbsp;mdr EUR</strong> globalt (samlad GRC/RegTech-adressbar marknad).</p>
+        </div>
+        <div class="card">
+          <h3>SAM</h3>
+          <p><strong>≈ 50–60&nbsp;mdr EUR</strong> (EU + tillståndsreglerade branscher där vi går först).</p>
+        </div>
+        <div class="card">
+          <h3>SOM</h3>
+          <p><strong>≈ 250–600&nbsp;M&nbsp;EUR</strong> (realistiskt fångbart första 5 åren via fokus-vertikaler & partners).</p>
+        </div>
+      </div>
+
+      <div class="grid-2" style="margin-top:16px">
+        <div class="card">
+          <h3>Vad betyder TAM / SAM / SOM?</h3>
+          <ul class="small">
+            <li><strong>TAM (Total Addressable Market):</strong> hela den globala intäktsmöjligheten om alla var perfekta kunder.</li>
+            <li><strong>SAM (Serviceable Available Market):</strong> den del av TAM vi faktiskt kan serva givet geografi, reglering och erbjudande i närtid.</li>
+            <li><strong>SOM (Serviceable Obtainable Market):</strong> vår realistiska andel av SAM inom en tidsperiod (t.ex. 5 år) med vald GTM.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Segmentlogik (3 kategorier)</h3>
+          <ul class="small">
+            <li><strong>GRC 1.0:</strong> mogna, breda plattformar (tunga implementationer).</li>
+            <li><strong>RegTech silos:</strong> snabba AI-punktlösningar (splittrar landskapet).</li>
+            <li><strong>PrimeMind:</strong> Integrated Compliance Management 2.0 med spårbarhet tvärs regler → krav → ansvar → system/data.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMET (med din spiralbild) -->
   <section id="problem" class="section">
     <div class="container">
-      <div class="band">Problem</div>
-      <div class="grid-3">
-        <div class="card"><h3>Textexplosion</h3><p>Regeltrycket ökar (DORA, AI Act, CSRD, NIS2 m.fl.).</p></div>
-        <div class="card"><h3>Kostsam hantering</h3><p>Manuella flöden kräver dyra expertteam och tar lång tid.</p></div>
-        <div class="card"><h3>Låg styrbarhet</h3><p>Fragment leder till felbeslut och ineffektiv uppföljning.</p></div>
-      </div>
+      <div class="band">Problemet</div>
+      <p class="muted">Utan ett nytt angreppssätt fastnar organisationer i silos, manuella processer och bristande systematik – och riskerar att sjunka när förändringstakten ökar.</p>
+      <img src="assets/compliance-spiral.jpg" alt="Compliance Spiral" style="margin-top:20px;border-radius:12px;max-width:100%;" loading="lazy">
     </div>
   </section>
 
+  <!-- LÖSNING -->
   <section id="losning" class="section">
     <div class="container">
       <div class="band">Lösning</div>
-      <p>AI + Prime Arch‑grammatik för att identifiera krav/villkor, mappa dem och presentera styrbarhet i cockpit.</p>
+      <p>AI + Prime Arch-grammatik för att identifiera krav/villkor, mappa dem och presentera styrbarhet i cockpit.</p>
       <div class="pipe">
-        <div class="pipe-step"><span>1</span><strong>Extract</strong><em>Råtext → Normaliserad</em></div>
-        <div class="pipe-step"><span>2</span><strong>Annotate</strong><em>Krav/Villkor</em></div>
-        <div class="pipe-step"><span>3</span><strong>Model</strong><em>Mappning & relationer</em></div>
-        <div class="pipe-step"><span>4</span><strong>Cockpit</strong><em>Gap • Åtgärder • Ansvar</em></div>
+        <div class="pipe-step"><span>1</span><strong>Extract</strong><em> Råtext → normaliserad</em></div>
+        <div class="pipe-step"><span>2</span><strong>Annotate</strong><em> Krav & villkor</em></div>
+        <div class="pipe-step"><span>3</span><strong>Model</strong><em> Mappning & relationer</em></div>
+        <div class="pipe-step"><span>4</span><strong>Cockpit</strong><em> Gap • Åtgärder • Ansvar</em></div>
       </div>
     </div>
   </section>
 
+  <!-- DIFFERENTIERING -->
   <section id="moat" class="section">
     <div class="container">
       <div class="band">Unikt med oss</div>
       <div class="grid-4">
-        <div class="card"><h3>Full kedja</h3><p>Text → styrbar modell → transformation.</p></div>
-        <div class="card"><h3>AI + Prime Arch</h3><p>Verifierbar grammatik för konsekvens och återanvändning.</p></div>
-        <div class="card"><h3>Strategiska risker</h3><p>Cockpit för ledningsnivå och revision.</p></div>
-        <div class="card"><h3>Partner‑first</h3><p>Exklusiv licens per marknad för fokuserad GTM.</p></div>
+        <div class="card"><h3>Full kedja</h3><p>Text → styrbar modell → prioriterad transformation.</p></div>
+        <div class="card"><h3>AI + Prime Arch</h3><p>Verifierbar “grammatik” för konsekvens och återanvändning.</p></div>
+        <div class="card"><h3>Lednings-fokus</h3><p>Compliance Cockpit för styrning, revision och uppföljning.</p></div>
+        <div class="card"><h3>Partner-first</h3><p>Skalning via exklusiva marknadslicenser & implementatörer.</p></div>
       </div>
     </div>
   </section>
 
+  <!-- MVP -->
   <section id="mvp" class="section">
     <div class="container">
-      <div class="band">MVP‑status</div>
+      <div class="band">MVP-status</div>
       <ul>
-        <li>End‑to‑end pipeline: extract → annotate → retrain → evaluate</li>
-        <li>Identifierar rubriker, paragrafer och villkor</li>
-        <li>Skapar strukturer för mappning mot process/system/roller/data</li>
-        <li>Första skarpa case genomfört</li>
+        <li>End-to-end pipeline: extract → annotate → retrain → evaluate.</li>
+        <li>Identifierar rubriker, paragrafer och villkor i regeltext.</li>
+        <li>Strukturer & relationer för mappning mot process/system/roller/data.</li>
+        <li>Pilotupplägg och metodik redo.</li>
       </ul>
     </div>
   </section>
 
+  <!-- GTM -->
   <section id="gtm" class="section">
     <div class="container">
       <div class="band">Affärsmodell & GTM</div>
@@ -148,34 +177,44 @@
         <div class="card">
           <h3>Affärsmodell</h3>
           <ul>
-            <li>ARR: SaaS‑licenser</li>
-            <li>Implementering via partner (exklusiv licens per marknad)</li>
+            <li>ARR: SaaS-licenser (cockpit + motor).</li>
+            <li>Implementering via partner (exklusiv licens per marknad).</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Go‑to‑market</h3>
+          <h3>Go-to-market</h3>
           <ol>
-            <li>Pilotkunder (Q3–Q4 2025)</li>
-            <li>Licensmodell</li>
-            <li>Skalning via partnerkanaler</li>
+            <li>Pilotkunder (Q3–Q4 2025) i prioriterade vertikaler.</li>
+            <li>Licensmodell + paketerade implementationer.</li>
+            <li>Skalning via partnerkanaler och referenscase.</li>
           </ol>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- WHITEPAPER CTA -->
+  <section class="section highlight" id="whitepaper">
+    <div class="container">
+      <h2>Vill du förstå marknaden på djupet?</h2>
+      <p>Beställ vår marknadsanalys via epost (3 delar: segmentering, TAM/SAM/SOM och implementations-/konsultmarknaden).</p>
+      <a href="mailto:investor@primemind.cloud" class="btn btn-primary">Beställ whitepaper</a>
+    </div>
+  </section>
+
+  <!-- KAPITAL -->
   <section id="kapital" class="section">
     <div class="container">
       <div class="band">Kapitalbehov</div>
       <div class="grid-3">
         <div class="card">
           <h3>Runda</h3>
-          <p><strong>10 MSEK för 30%</strong>.</p>
+          <p><strong>10&nbsp;MSEK för 30%</strong></p>
         </div>
         <div class="card">
           <h3>Användning</h3>
           <ul>
-            <li>Cloud/ML‑rekryteringar</li>
+            <li>Cloud/ML-rekryteringar</li>
             <li>Plattformsutveckling</li>
             <li>Marknadstester & piloter</li>
             <li>Sälj & marknad</li>
@@ -184,8 +223,15 @@
         <div class="card">
           <h3>Kontakt</h3>
           <p><strong>Investor Relations</strong><br>
-          <a href="mailto:invest@primemind.cloud">invest@primemind.cloud</a></p>
+            <a href="mailto:investor@primemind.cloud">investor@primemind.cloud</a>
+          </p>
         </div>
+      </div>
+
+      <div style="margin-top:32px;text-align:center">
+        <h2>Exklusiv möjlighet</h2>
+        <p>Vi öppnar nu för ett fåtal ängelinvesterare som vill positionera sig tidigt. Vill du se hur vi tar compliance från policy till cockpit? Låt oss boka ett möte.</p>
+        <a href="mailto:investor@primemind.cloud" class="btn btn-primary">Kontakta oss</a>
       </div>
     </div>
   </section>
